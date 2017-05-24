@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private CoordinatorLayout coordinatorLayout;
     private ProgressDialog dialog;
 
-
     private static final String TETHER_STATUS = "settings get global tether_dun_required";
     private static final String TETHER_ENABLE = "settings put global tether_dun_required 0";
     private static final String TETHER_DISABLE = "settings put global tether_dun_required null";
