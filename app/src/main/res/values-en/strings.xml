@@ -16,4 +16,5 @@
     <string name="enabling_hotspot">Enabling free hotspot...</string>
     <string name="error_procedure">Interrupted, cannot complete.</string>
     <string name="disabling_hotspot">DIsabling free hotspot...</string>
+    <string name="root_not_available">Root not found, this app doesn\'t work without it.</string>
 </resources>

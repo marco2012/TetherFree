@@ -14,7 +14,7 @@
         android:layout_marginBottom="81dp"
         android:layout_marginTop="8dp"
         android:padding="10dp"
-        android:text="Hello World!"
+        android:text="@string/root_not_available"
         android:textAlignment="center"
         android:textColor="?android:attr/textColorAlertDialogListItem"
         android:textSize="20sp"
@@ -85,7 +85,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/coordinatorLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
@@ -98,7 +98,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.983"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteY="486dp">
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
     </android.support.design.widget.CoordinatorLayout>
 
