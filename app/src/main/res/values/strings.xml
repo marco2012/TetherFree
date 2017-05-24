@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TetherFree</string>
+    <string name="enable_free_hotspot">Abilita hotspot gratuito </string>
+    <string name="hotspot_not_free">Hotpost a pagamento. Tocca il bottone per abilitare hotspot gratuito.</string>
+    <string name="hotspot_free">Hotspot gratuito abilitato. Non devi fare altro. Divertiti!</string>
+    <string name="free_hotspot_enabled">Hotspot gratuito abilitato</string>
+    <string name="free_hotspot_not_enabled">Hotspot gratuito non abilitato</string>
+    <string name="app_intro">Questa applicazione ti permette di abilitare l\'hotspot wifi e il tethering GRATUITAMENTE senza incorrere in tariffe aggiuntive imposte dal tuo operatore.</string>
+    <string name="check_hotspot_status">Controlla stato hotspot</string>
+    <string name="free_hotspot_status">Stato hotspot gratuito:</string>
+    <string name="reboot">Riavvia</string>
+    <string name="reboot_device">Riavviare dispositivo ora? (consigliato)</string>
+    <string name="rebooting">Riavvio...</string>
+    <string name="error_procedure">Procedura interrotta, impossibile completare.</string>
+    <string name="loading">Caricamento</string>
+    <string name="enabling_hotspot">Sto abilitando hotspot gratuito</string>
+    <string name="disabling_hotspot">Sto disattivando hotspot gratuito...</string>
+</resources>

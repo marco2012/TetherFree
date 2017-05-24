@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TetherFree</string>
+    <string name="enable_free_hotspot">Enable free hotspot</string>
+    <string name="free_hotspot_enabled">Free hotspot enabled</string>
+    <string name="free_hotspot_not_enabled">Free hotspot NOT enabled</string>
+    <string name="hotspot_free">Free hotspot enabled. You are all set. Enjoy!</string>
+    <string name="hotspot_not_free">Paying hotspot. Click the button to enable free hotspot.</string>
+    <string name="app_intro">This app allows you to enable wifi hotspot and tethering for FREE without incurring in additional fees set by your mobile operator.</string>
+    <string name="check_hotspot_status">Check hotspot status</string>
+    <string name="free_hotspot_status">Free hostpost status:</string>
+    <string name="loading">Loading...</string>
+    <string name="reboot">Reboot</string>
+    <string name="reboot_device">Reboot device now? (Raccomended)</string>
+    <string name="rebooting">Rebooting...</string>
+    <string name="enabling_hotspot">Enabling free hotspot...</string>
+    <string name="error_procedure">Interrupted, cannot complete.</string>
+    <string name="disabling_hotspot">DIsabling free hotspot...</string>
+</resources>
