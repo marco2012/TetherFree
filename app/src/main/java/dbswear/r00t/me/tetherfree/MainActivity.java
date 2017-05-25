@@ -1,6 +1,7 @@
 package dbswear.r00t.me.tetherfree;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.design.widget.CoordinatorLayout;
@@ -13,6 +14,8 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+
+import com.scottyab.rootbeer.RootBeer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,16 +36,18 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.textView);
         textView3 = (TextView) findViewById(R.id.textView3);
         toggle = (ToggleButton) findViewById(R.id.toggleButton);
+        //root check
+        RootBeer rootBeer = new RootBeer(this);
+        if (!rootBeer.isRooted())
+            startActivity(new Intent(MainActivity.this, NoRootActivity.class));
 
         //returns current hotspot status
         hotspot_status = RootCommandExec.sudoForResult(TETHER_STATUS);
-
         checkHotspotStatus(hotspot_status);
 
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    // The toggle is enabled
+                if (isChecked) { // The toggle is enabled
                     new AsyncTether().execute(0); //0 means enable
                 } else {
                     new AsyncTether().execute(1); //1 means disable
@@ -56,11 +61,13 @@ public class MainActivity extends AppCompatActivity {
             toggle.setChecked(false);
             textView.setText(getString(R.string.hotspot_not_free));
             textView.setTextColor(Color.RED);
+            toggle.setTextOff(getString(R.string.paying));
             Log.d("HOTSPOT STATUS", hotspot_status);
         } else if (hotspot_status.equals("0")) { //free
             toggle.setChecked(true);
             textView.setText(getString(R.string.hotspot_free));
             textView.setTextColor(Color.GREEN);
+            toggle.setTextOn(getString(R.string.free));
             Log.d("HOTSPOT STATUS", hotspot_status);
         }
     }
@@ -99,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(Integer... params) {
-
             if(params[0]==0)
                 dummy = RootCommandExec.sudoForResult(TETHER_ENABLE);
             else if (params[0]==1)

@@ -17,4 +17,9 @@
     <string name="error_procedure">Interrupted, cannot complete.</string>
     <string name="disabling_hotspot">DIsabling free hotspot...</string>
     <string name="root_not_available">Root not found, this app doesn\'t work without it.</string>
+    <string name="root_not_found">Root not found</string>
+    <string name="root_not_found_text">It seems your device does not have root pesmission. The app will not work without them.</string>
+    <string name="not_available">Not Available</string>
+    <string name="paying">Paying</string>
+    <string name="free">Free</string>
 </resources>
