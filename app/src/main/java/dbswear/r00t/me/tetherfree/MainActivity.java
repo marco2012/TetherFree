@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkHotspotStatus(String hotspot_status) {
+        makeToast("[DEBUG]tether_dun_required "+hotspot_status);
         if (hotspot_status.equals("null") || hotspot_status.equals("1")){ //paid hotspot
             toggle.setChecked(false);
             textView.setText(getString(R.string.hotspot_not_free));
